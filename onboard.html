@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CityConnect Onboarding</title>
+  <link rel="stylesheet" href="styl.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🚀 CityConnect Onboarding</h1>
+    <p>Launch your business in minutes</p>
+  </header>
+
+  <main class="container">
+    <form id="onboardingForm">
+      <h2>📋 Step 1: Business Details</h2>
+
+      <label for="businessType">Business Type:</label>
+      <select id="businessType" required>
+        <option value="">Select</option>
+        <option value="grocery">Grocery</option>
+        <option value="clothing">Clothing</option>
+        <option value="salon">Salon</option>
+        <option value="electronics">Electronics</option>
+        <option value="tuition">Tuition</option>
+        <option value="repair">Repair</option>
+      </select>
+
+      <h2>🔧 Step 2: Select Features</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Online Orders"> Online Orders</label>
+        <label><input type="checkbox" value="WhatsApp Button"> WhatsApp Button</label>
+        <label><input type="checkbox" value="Gallery"> Gallery</label>
+        <label><input type="checkbox" value="Contact Info"> Contact Info</label>
+        <label><input type="checkbox" value="Enquiry Form"> Enquiry Form</label>
+      </div>
+
+      <button type="submit">✨ Generate Preview</button>
+    </form>
+
+    <div class="preview-section">
+      <h2>🔍 Live Preview</h2>
+      <div id="previewBox">
+        <p>Select options above to generate preview...</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

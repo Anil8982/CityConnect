@@ -1,0 +1,298 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #004aad;
+  padding: 1.5rem 0;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header ul li a {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #004aad, #0084ff);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffd700;
+  border: none;
+  color: #004aad;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background-color: #ffc400;
+}
+
+/* Features Section */
+.features {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #004aad;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+  color: #004aad;
+  margin-bottom: 0.8rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+}
+
+/* Steps Section */
+.steps {
+  background-color: #eaf2ff;
+  padding: 3rem 0;
+}
+
+.steps h2 {
+  text-align: center;
+  color: #004aad;
+  margin-bottom: 2rem;
+}
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.step {
+  background: white;
+  border-left: 5px solid #004aad;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.step h4 {
+  margin-bottom: 0.5rem;
+  color: #004aad;
+}
+
+.step p {
+  font-size: 0.95rem;
+}
+
+/* Call To Action */
+.cta {
+  background: #004aad;
+  color: white;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.cta button {
+  padding: 0.75rem 1.4rem;
+  background-color: #ffd700;
+  color: #004aad;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #ffc400;
+}
+
+/* Footer */
+footer {
+  background-color: #002c6f;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-list {
+    padding: 0 1rem;
+  }
+}
+
+/* Features Section */
+.features {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.how-it-works ol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.how-it-works ol li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.how-it-works ol li::marker {
+  font-weight: bold;
+  color: #007bff;
+}
